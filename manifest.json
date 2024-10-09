@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Change WordPress.org Login Logo",
+    "version": "1.0",
+    "description": "Replaces the default logo on the WordPress® login page with a custom image.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://login.wordpress.org/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
